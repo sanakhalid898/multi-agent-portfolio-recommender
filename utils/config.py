@@ -17,13 +17,12 @@ except Exception as e:
     logger.error(f"Error loading OpenAI API key: {str(e)}")
     raise
 
-GEMINI_API_KEY = "AIzaSyDrIw0IQZnPOc5w2db5MG97wvNrpbVFal8"
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 NEWSAPI_KEY = st.secrets["NEWSAPI_KEY"]
 FINNHUB_API_KEY = st.secrets["FINNHUB_API_KEY"]
 GNEWS_API_KEY = st.secrets["GNEWS_API_KEY"]
-ALPHA_VANTAGE_API_KEY = "V70BZ4ORJS6YRUMI"
-FRED_API_KEY = "23395a74b6ef0e6647cf8f647c755ed4"
+ALPHA_VANTAGE_API_KEY = st.secrets["ALPHA_VANTAGE_API_KEY"]
+FRED_API_KEY = st.secrets["FRED_API_KEY"]
 
 #Database Configs
 AZURE_DATABASE=st.secrets["database"]["AZURE_DATABASE"]
